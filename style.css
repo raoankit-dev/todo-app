@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo{
+    /* font-size: 200px; */
+    text-shadow: 0 0 10px rgba(255, 255, 255, .9);
+    letter-spacing: 2px;
+    /* position: relative; */
+    font-size: clamp(2rem, 7.5vw, 10rem); /* Makes font size responsive */
+    position: absolute;
+    z-index: 1;
+}
+
+/* .logo h1 span {
+    color: lightgreen;
+} */
+
+.container {
+    /* width: 10rem; */
+    position: absolute;
+    z-index: 2; /* Sits cleanly on top of the text */
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(8px); /* Modern frosted-glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 16px;
+    width: 70%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.header img {
+    width: 50px;
+    margin-top: 8px;
+}
+
+/* .addTask {
+    background-color: aliceblue; 
+} */
+
+input {
+    border: 1px solid rgba(255, 255, 255, .3);
+    font-size: 15px;
+    padding: 10px;
+    width: 25rem;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+    background: transparent;
+    transition: transform .3s;
+}
+
+input:hover {
+    transform: translateY(-2px);
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px;
+    width: 60px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    transition: transform .3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.showTask {
+    text-align: left;
+    /* background: #000; */
+}
+
+.showTask ul {
+    padding: 15px;
+}
+
+.showTask ul li {
+    list-style: none;
+    /* background-color: aliceblue; */
+    margin-bottom: 10px;
+    font-size: 19px;
+    border-radius: 50px;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showTask ul li button {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50px;
+    font-weight: 700;
+    background: transparent;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.showTask ul li button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
